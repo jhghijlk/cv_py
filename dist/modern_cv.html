@@ -1,21 +1,33 @@
 <!doctype html>
 <html lang="fr">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CV — Siala ANOH</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/lucide-static@latest/font/lucide.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Siala ANOH</a>
-      <div class="d-flex align-items-center">
-        <button id="themeToggle" class="btn btn-sm btn-outline-secondary me-2" title="Basculer thème">🌗</button>
-        <button id="downloadPdfBtn" class="btn btn-sm btn-outline-primary me-2">Télécharger PDF</button>
-        <a class="btn btn-sm btn-primary" href="#contact">Contact</a>
+      <a class="navbar-brand fw-bold" href="#">
+        <span class="gradient-text">Siala ANOH</span>
+      </a>
+      <div class="d-flex align-items-center gap-2">
+        <button id="themeToggle" class="btn btn-icon" title="Basculer thème">
+          <i class="lucide-moon"></i>
+        </button>
+        <button id="downloadPdfBtn" class="btn btn-gradient">
+          <i class="lucide-download me-2"></i>Télécharger PDF
+        </button>
+        <a class="btn btn-primary" href="#contact">
+          <i class="lucide-mail me-2"></i>Contact
+        </a>
       </div>
     </div>
   </nav>
@@ -24,155 +36,335 @@
     <div class="row g-4">
       <!-- Left column -->
       <aside class="col-lg-4">
-        <div class="sidebar shadow-sm p-4 mb-4 reveal">
-          <div class="text-center py-3 text-white">
-            <!-- Simple SVG placeholder profile -->
-            <div class="avatar mx-auto mb-3">
-              <svg width="120" height="120" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="rounded-circle p-2">
-                <path d="M12 12a4 4 0 100-8 4 4 0 000 8z" fill="#fff"/>
-                <path d="M21 21a9 9 0 10-18 0h18z" fill="rgba(255,255,255,0.9)"/>
-              </svg>
+        <div class="sidebar glass-effect p-4 mb-4 reveal">
+          <div class="text-center py-3">
+            <!-- Modern profile avatar with gradient border -->
+            <div class="avatar-wrapper mx-auto mb-3">
+              <div class="avatar gradient-border">
+                <i class="lucide-user" style="width: 60px; height: 60px; stroke-width: 1.5"></i>
+              </div>
             </div>
-            <h3 class="mb-0">Siala ANOH</h3>
-            <p class="small mb-0">Data Analyst / Business Analyst</p>
-            <p class="small mt-2">Pilotage de la performance • Tableaux de bord • Qualité Data</p>
+            <h3 class="mb-2 fw-bold">Siala ANOH</h3>
+            <p class="mb-0 badge-role">Data Analyst / Business Analyst</p>
+            <p class="small mt-3 opacity-90">Pilotage de la performance • Tableaux de bord • Qualité Data</p>
           </div>
 
-          <hr style="border-color:rgba(255,255,255,0.12)" />
+          <div class="divider"></div>
 
-          <h6 class="text-uppercase">Contact</h6>
-          <ul class="list-unstyled small mb-3">
-            <li>✉️ <a href="mailto:anohsiala@gmail.com">anohsiala@gmail.com</a></li>
-            <li>📞 <a href="tel:+33749020152">07 49 02 01 52</a></li>
-            <li>🔗 <a href="https://www.linkedin.com/in/siala-anoh" target="_blank">LinkedIn: Siala Anoh</a></li>
-            <li>📍 Massy (91300) — Mobilité : Toute la France</li>
+          <h6 class="sidebar-title"><i class="lucide-contact me-2"></i>Contact</h6>
+          <ul class="list-unstyled contact-list mb-4">
+            <li class="contact-item">
+              <i class="lucide-mail"></i>
+              <a href="mailto:anohsiala@gmail.com">anohsiala@gmail.com</a>
+            </li>
+            <li class="contact-item">
+              <i class="lucide-phone"></i>
+              <a href="tel:+33749020152">07 49 02 01 52</a>
+            </li>
+            <li class="contact-item">
+              <i class="lucide-linkedin"></i>
+              <a href="https://www.linkedin.com/in/siala-anoh" target="_blank">LinkedIn: Siala Anoh</a>
+            </li>
+            <li class="contact-item">
+              <i class="lucide-map-pin"></i>
+              <span>Massy (91300) — Mobilité : Toute la France</span>
+            </li>
           </ul>
 
-          <h6 class="text-uppercase">Compétences techniques</h6>
-          <div class="mb-3">
-            <span class="badge badge-soft me-1 mb-1">Power BI</span>
-            <span class="badge badge-soft me-1 mb-1">SQL</span>
-            <span class="badge badge-soft me-1 mb-1">Python</span>
-            <span class="badge badge-soft me-1 mb-1">R</span>
-            <span class="badge badge-soft me-1 mb-1">Excel</span>
-            <span class="badge badge-soft me-1 mb-1">Dataïku</span>
-            <span class="badge badge-soft me-1 mb-1">Jira</span>
-            <span class="badge badge-soft me-1 mb-1">Access</span>
+          <h6 class="sidebar-title"><i class="lucide-code me-2"></i>Compétences techniques</h6>
+          <div class="mb-4">
+            <span class="badge badge-modern me-2 mb-2"><i class="lucide-chart-bar me-1"></i>Power BI</span>
+            <span class="badge badge-modern me-2 mb-2"><i class="lucide-database me-1"></i>SQL</span>
+            <span class="badge badge-modern me-2 mb-2"><i class="lucide-code-2 me-1"></i>Python</span>
+            <span class="badge badge-modern me-2 mb-2"><i class="lucide-bar-chart-3 me-1"></i>R</span>
+            <span class="badge badge-modern me-2 mb-2"><i class="lucide-file-spreadsheet me-1"></i>Excel</span>
+            <span class="badge badge-modern me-2 mb-2"><i class="lucide-layers me-1"></i>Dataïku</span>
+            <span class="badge badge-modern me-2 mb-2"><i class="lucide-kanban me-1"></i>Jira</span>
+            <span class="badge badge-modern me-2 mb-2"><i class="lucide-table me-1"></i>Access</span>
           </div>
 
-          <div class="mt-4 text-center">
-            <a class="btn btn-sm bg-gradient" href="#contact">Me contacter</a>
+          <h6 class="sidebar-title"><i class="lucide-trending-up me-2"></i>Expertise</h6>
+          <div class="skills mb-4">
+            <div class="skill">
+              <div class="skill-title d-flex justify-content-between"><span>Power BI</span><span
+                  class="fw-semibold">85%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="85%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title d-flex justify-content-between"><span>SQL</span><span
+                  class="fw-semibold">80%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="80%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title d-flex justify-content-between"><span>Python</span><span
+                  class="fw-semibold">75%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="75%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title d-flex justify-content-between"><span>Excel</span><span
+                  class="fw-semibold">90%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="90%"></div>
+              </div>
+            </div>
           </div>
 
-          <div class="skills mt-2">
-            <div class="skill">
-              <div class="skill-title d-flex justify-content-between small"><span>Power BI</span><span>85%</span></div>
-              <div class="skill-bar bg-light"><div class="skill-fill bg-primary" data-width="85%"></div></div>
-            </div>
-            <div class="skill">
-              <div class="skill-title d-flex justify-content-between small"><span>SQL</span><span>80%</span></div>
-              <div class="skill-bar bg-light"><div class="skill-fill bg-primary" data-width="80%"></div></div>
-            </div>
-            <div class="skill">
-              <div class="skill-title d-flex justify-content-between small"><span>Python</span><span>75%</span></div>
-              <div class="skill-bar bg-light"><div class="skill-fill bg-primary" data-width="75%"></div></div>
-            </div>
-            <div class="skill">
-              <div class="skill-title d-flex justify-content-between small"><span>Excel</span><span>90%</span></div>
-              <div class="skill-bar bg-light"><div class="skill-fill bg-primary" data-width="90%"></div></div>
-            </div>
+          <div class="text-center my-4">
+            <a class="btn btn-contact-modern" href="#contact">
+              <i class="lucide-send me-2"></i>Me contacter
+            </a>
           </div>
 
-          <h6 class="text-uppercase">Certifications</h6>
-          <ul class="list-unstyled small mb-3">
-            <li>2025 — Dataïku Core Designer & ML Practitioner</li>
+          <h6 class="sidebar-title"><i class="lucide-award me-2"></i>Certifications</h6>
+          <ul class="list-unstyled certification-list mb-4">
+            <li><i class="lucide-check-circle me-2"></i>2025 — Dataïku Core Designer & ML Practitioner</li>
           </ul>
 
-          <h6 class="text-uppercase">Langues</h6>
-          <ul class="list-unstyled small mb-0">
-            <li>Français — natif</li>
-            <li>Anglais — courant</li>
+          <h6 class="sidebar-title"><i class="lucide-languages me-2"></i>Langues</h6>
+          <ul class="list-unstyled language-list mb-0">
+            <li><span class="lang-dot"></span>Français — natif</li>
+            <li><span class="lang-dot"></span>Anglais — courant</li>
           </ul>
         </div>
       </aside>
 
       <!-- Right column -->
       <section class="col-lg-8">
-        <div class="card shadow-sm p-4 mb-4 reveal">
-          <div class="d-flex justify-content-between align-items-start mb-3">
-            <div>
-              <h1 class="h4 mb-1">Data Analyst — Business Analyst</h1>
-              <p class="text-muted mb-0">Expertise en analyse de données opérationnelles, conception de tableaux de bord décisionnels et amélioration de la qualité des données.</p>
+        <div class="card glass-effect p-4 mb-4 reveal">
+          <div class="hero-section mb-4">
+            <div class="d-flex align-items-center mb-3">
+              <div class="hero-icon me-3">
+                <i class="lucide-briefcase"></i>
+              </div>
+              <div>
+                <h1 class="display-6 fw-bold mb-2 gradient-text">Data Analyst — Business Analyst</h1>
+                <p class="lead text-muted mb-0">Expertise en analyse de données opérationnelles, conception de tableaux
+                  de bord décisionnels et amélioration de la qualité des données.</p>
+              </div>
             </div>
           </div>
 
-          <hr />
+          <div class="divider my-4"></div>
 
-          <h5 class="mb-3 section-head">Expériences Professionnelles</h5>
+          <h5 class="mb-4 section-head"><i class="lucide-briefcase me-2"></i>Expériences Professionnelles</h5>
 
           <div class="timeline">
-            <div class="timeline-item mb-3 reveal">
-              <h6 class="mb-1">Stagiaire — Analyste Qualité des Données</h6>
-              <span class="text-muted small">ORANGE SA | Paris — Mars 2025 – Septembre 2025</span>
-              <ul>
-                <li>Recueil des besoins et modélisation des données ; formalisation des attentes métiers.</li>
-                <li>Analyse de la qualité et conformité dans PostgreSQL; correction des anomalies (forte réduction des erreurs).</li>
-                <li>Définition et suivi d'indicateurs KPI, rédaction de documents fonctionnels et cahiers de recette.</li>
-                <li>Audit de 206 tables et participation à la migration d'un outil de référentiel (56% des rôles construits).</li>
-              </ul>
+            <div class="timeline-item mb-4 reveal">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="d-flex align-items-start mb-2">
+                  <div class="company-badge orange-badge me-3">
+                    <i class="lucide-building"></i>
+                  </div>
+                  <div class="flex-grow-1">
+                    <h6 class="mb-1 fw-bold">Stagiaire — Analyste Qualité des Données</h6>
+                    <div class="d-flex align-items-center text-muted small mb-2">
+                      <i class="lucide-building-2 me-2"></i>
+                      <span class="me-3">ORANGE SA | Paris</span>
+                      <i class="lucide-calendar me-2"></i>
+                      <span>Mars 2025 – Septembre 2025</span>
+                    </div>
+                  </div>
+                </div>
+                <ul class="experience-list">
+                  <li><i class="lucide-check-circle-2 me-2"></i>Recueil des besoins et modélisation des données ;
+                    formalisation des attentes métiers.</li>
+                  <li><i class="lucide-check-circle-2 me-2"></i>Analyse de la qualité et conformité dans PostgreSQL;
+                    correction des anomalies (forte réduction des erreurs).</li>
+                  <li><i class="lucide-check-circle-2 me-2"></i>Définition et suivi d'indicateurs KPI, rédaction de
+                    documents fonctionnels et cahiers de recette.</li>
+                  <li><i class="lucide-check-circle-2 me-2"></i>Audit de 206 tables et participation à la migration d'un
+                    outil de référentiel (56% des rôles construits).</li>
+                </ul>
+              </div>
             </div>
 
-            <div class="timeline-item mb-3 reveal">
-              <h6 class="mb-1">Consultante Data</h6>
-              <span class="text-muted small">MAZARS | Paris — Octobre 2024 - Février 2025</span>
-              <ul>
-                <li>Migration de scripts SAS vers R et benchmark d'outils IA pour automatisation.</li>
-                <li>Conception de maquettes et scénarios de tests ; analyses et recommandations stratégiques.</li>
-              </ul>
+            <div class="timeline-item mb-4 reveal">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="d-flex align-items-start mb-2">
+                  <div class="company-badge mazars-badge me-3">
+                    <i class="lucide-briefcase"></i>
+                  </div>
+                  <div class="flex-grow-1">
+                    <h6 class="mb-1 fw-bold">Consultante Data</h6>
+                    <div class="d-flex align-items-center text-muted small mb-2">
+                      <i class="lucide-building-2 me-2"></i>
+                      <span class="me-3">MAZARS | Paris</span>
+                      <i class="lucide-calendar me-2"></i>
+                      <span>Octobre 2024 - Février 2025</span>
+                    </div>
+                  </div>
+                </div>
+                <ul class="experience-list">
+                  <li><i class="lucide-check-circle-2 me-2"></i>Migration de scripts SAS vers R et benchmark d'outils IA
+                    pour automatisation.</li>
+                  <li><i class="lucide-check-circle-2 me-2"></i>Conception de maquettes et scénarios de tests ; analyses
+                    et recommandations stratégiques.</li>
+                </ul>
+              </div>
             </div>
 
-            <div class="timeline-item mb-3 reveal">
-              <h6 class="mb-1">Équipière Polyvalente</h6>
-              <span class="text-muted small">QUICK | Châtenay — Septembre 2023 - Octobre 2024</span>
-              <ul>
-                <li>Optimisation gestion des stocks : réduction des ruptures de 20%.</li>
-                <li>Amélioration satisfaction client de 15% (NPS) et gestion de caisse (150+ transactions/jour).</li>
-              </ul>
+            <div class="timeline-item mb-4 reveal">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="d-flex align-items-start mb-2">
+                  <div class="company-badge quick-badge me-3">
+                    <i class="lucide-store"></i>
+                  </div>
+                  <div class="flex-grow-1">
+                    <h6 class="mb-1 fw-bold">Équipière Polyvalente</h6>
+                    <div class="d-flex align-items-center text-muted small mb-2">
+                      <i class="lucide-building-2 me-2"></i>
+                      <span class="me-3">QUICK | Châtenay</span>
+                      <i class="lucide-calendar me-2"></i>
+                      <span>Septembre 2023 - Octobre 2024</span>
+                    </div>
+                  </div>
+                </div>
+                <ul class="experience-list">
+                  <li><i class="lucide-check-circle-2 me-2"></i>Optimisation gestion des stocks : réduction des ruptures
+                    de 20%.</li>
+                  <li><i class="lucide-check-circle-2 me-2"></i>Amélioration satisfaction client de 15% (NPS) et gestion
+                    de caisse (150+ transactions/jour).</li>
+                </ul>
+              </div>
             </div>
           </div>
 
-          <hr />
+          <div class="divider my-4"></div>
 
-          <h5 class="mb-3 section-head">Projets</h5>
-          <ul>
-            <li class="project-item reveal" data-title="Power BI — Ville de Paris" data-content="Analyse des anomalies de l'application Dans ma Rue et création de dashboards pour optimiser le traitement."><strong>Power BI — Ville de Paris</strong> : Analyse des anomalies de l'application Dans ma Rue et création de dashboards.</li>
-            <li class="project-item reveal" data-title="NLP en Python" data-content="Analyse des sentiments sur Twitter et classification avec modèles ML."><strong>NLP en Python</strong> : Analyse des sentiments sur Twitter et classification avec modèles ML.</li>
-            <li class="project-item reveal" data-title="Analyses en R" data-content="Modélisation des facteurs de survie, études économétriques, estimation MEDAF."><strong>Analyses en R</strong> : Modélisation survie (Titanic), études économétriques, estimation MEDAF.</li>
-          </ul>
+          <h5 class="mb-4 section-head"><i class="lucide-folder-open me-2"></i>Projets</h5>
+          <div class="row g-3">
+            <div class="col-md-12">
+              <div class="project-card reveal" data-title="Power BI — Ville de Paris"
+                data-content="Analyse des anomalies de l'application Dans ma Rue et création de dashboards pour optimiser le traitement.">
+                <div class="project-icon powerbi-icon">
+                  <i class="lucide-chart-bar"></i>
+                </div>
+                <div class="project-info">
+                  <h6 class="mb-1 fw-bold">Power BI — Ville de Paris</h6>
+                  <p class="small text-muted mb-0">Analyse des anomalies de l'application Dans ma Rue et création de
+                    dashboards.</p>
+                </div>
+                <i class="lucide-chevron-right project-arrow"></i>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="project-card reveal" data-title="NLP en Python"
+                data-content="Analyse des sentiments sur Twitter et classification avec modèles ML.">
+                <div class="project-icon python-icon">
+                  <i class="lucide-brain"></i>
+                </div>
+                <div class="project-info">
+                  <h6 class="mb-1 fw-bold">NLP en Python</h6>
+                  <p class="small text-muted mb-0">Analyse des sentiments sur Twitter et classification avec modèles ML.
+                  </p>
+                </div>
+                <i class="lucide-chevron-right project-arrow"></i>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="project-card reveal" data-title="Analyses en R"
+                data-content="Modélisation des facteurs de survie, études économétriques, estimation MEDAF.">
+                <div class="project-icon r-icon">
+                  <i class="lucide-line-chart"></i>
+                </div>
+                <div class="project-info">
+                  <h6 class="mb-1 fw-bold">Analyses en R</h6>
+                  <p class="small text-muted mb-0">Modélisation survie (Titanic), études économétriques, estimation
+                    MEDAF.</p>
+                </div>
+                <i class="lucide-chevron-right project-arrow"></i>
+              </div>
+            </div>
+          </div>
 
         </div>
 
-        <div id="contact" class="card shadow-sm p-4 mb-4 reveal">
-          <h5 class="section-head mb-3">Résumé & Contact</h5>
-          <p>Siala ANOH — Business Analyst Data avec expérience en pilotage de la performance et qualité de service. Capacité à traduire les besoins métiers en indicateurs pertinents et recommandations data-driven.</p>
-          <p class="mb-0 small">Mail : <a href="mailto:anohsiala@gmail.com">anohsiala@gmail.com</a> — Tél : <a href="tel:+33749020152">07 49 02 01 52</a></p>
+        <div id="contact" class="card glass-effect p-5 mb-4 reveal contact-card">
+          <div class="text-center mb-4">
+            <div class="contact-icon-wrapper mx-auto mb-3">
+              <i class="lucide-send"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Entrons en contact</h5>
+            <p class="text-muted">Business Analyst Data avec expérience en pilotage de la performance et qualité de
+              service. Capacité à traduire les besoins métiers en indicateurs pertinents et recommandations data-driven.
+            </p>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-md-6">
+              <a href="mailto:anohsiala@gmail.com" class="contact-method">
+                <i class="lucide-mail"></i>
+                <div>
+                  <div class="small text-muted">Email</div>
+                  <div class="fw-semibold">anohsiala@gmail.com</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-6">
+              <a href="tel:+33749020152" class="contact-method">
+                <i class="lucide-phone"></i>
+                <div>
+                  <div class="small text-muted">Téléphone</div>
+                  <div class="fw-semibold">07 49 02 01 52</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-6">
+              <a href="https://www.linkedin.com/in/siala-anoh" target="_blank" class="contact-method">
+                <i class="lucide-linkedin"></i>
+                <div>
+                  <div class="small text-muted">LinkedIn</div>
+                  <div class="fw-semibold">Siala Anoh</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-6">
+              <div class="contact-method">
+                <i class="lucide-map-pin"></i>
+                <div>
+                  <div class="small text-muted">Localisation</div>
+                  <div class="fw-semibold">Massy (91300)</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
       </section>
     </div>
 
-    <footer class="text-center text-muted mt-4 mb-5 small">CV généré automatiquement • Exportable en PDF pour candidatures</footer>
+    <footer class="text-center mt-5 mb-5">
+      <div class="footer-content">
+        <p class="text-muted small mb-2">
+          <i class="lucide-sparkles me-2"></i>CV généré automatiquement • Exportable en PDF pour candidatures
+        </p>
+        <p class="text-muted small mb-0">
+          Dernière mise à jour : <span class="fw-semibold">Février 2026</span>
+        </p>
+      </div>
+    </footer>
   </main>
 
   <!-- Project Modal -->
   <div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="projectModalTitle">Projet</h5>
+      <div class="modal-content modern-modal">
+        <div class="modal-header border-0 pb-0">
+          <h5 class="modal-title fw-bold" id="projectModalTitle">
+            <i class="lucide-folder-open me-2"></i>Projet
+          </h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
         </div>
-        <div class="modal-body" id="projectModalBody"></div>
+        <div class="modal-body pt-2" id="projectModalBody"></div>
       </div>
     </div>
   </div>
@@ -180,4 +372,5 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>
